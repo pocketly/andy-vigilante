@@ -14,7 +14,7 @@ npm install -g andy-vigilante
 ## USAGE
 
 ```
-andy-vigilante /export/all/android/image/sizes/to/this/directory /Users/you/AndroidProject/app/src/main/res/
+andyvigilante /export/all/android/image/sizes/to/this/directory /Users/you/AndroidProject/app/src/main/res/
 ```
 
 ### What does this do?
