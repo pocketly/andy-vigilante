@@ -31,10 +31,14 @@ chk.watch(src, {ignored: /([\/\\]\.|\.idea|node_modules)/}).on('all', co.wrap(fu
 
   try {
 
-    log(event.toUpperCase() + ':', mkpath(Path.basename(Path.dirname(path)), Path.basename(path)));
+    if (process.env.NODE_DEBUG) {
+      log(event.toUpperCase() + ':', mkpath(Path.basename(Path.dirname(path)), Path.basename(path)));
+    }
 
     let matches;
     if ('unlink' != event && (matches = path.match(IMAGE_REGEX))) {
+
+
       let filename = matches[1] + matches[3];
       let fileType = matches[2];
 
