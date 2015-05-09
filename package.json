@@ -1,6 +1,6 @@
 {
   "name": "andy-vigilante",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Android Image File Watcher",
   "main": "bin/index.js",
   "scripts": {
